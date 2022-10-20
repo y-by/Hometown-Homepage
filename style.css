@@ -1,4 +1,4 @@
-/* todo
+/* TODO for practice
 1. Change font to nice one
 2. Go through the code and clean it
 3. Add footer
@@ -34,10 +34,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 img {
   width: 100px;
-}
-
-.container {
-  
 }
 
 .hero {
@@ -143,16 +139,15 @@ p {
 .guide {
   margin: 4em auto;
   padding: 1em;
+  max-width: 430px;
 
   display: flex;
   align-items: center;
   gap: 1em;
-  max-width: 430px;
 
   border-bottom: 5px solid var(--DARK-BLUE);
   border-radius: 1em;
   background-color: var(--AQUA);
-
   box-shadow: 10px 10px 30px rgba(0, 0, 0, .3);
 }
 
