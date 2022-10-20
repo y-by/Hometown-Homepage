@@ -1,0 +1,170 @@
+/* todo
+1. Change font to nice one
+2. Go through the code and clean it
+3. Add footer
+4. Change to different color palette
+*/
+
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+  --RED: #E63946;
+  --LIGHT: #F1FAEE;
+  --AQUA: #A8DADC;
+  --LIGHT-BLUE: #457B9D;
+  --DARK-BLUE: #1D3557;
+
+  margin: 0;
+  text-align: center;
+
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+img {
+  width: 100px;
+}
+
+.container {
+  
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/images/Tel-aviv.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 343px;
+  color: var(--LIGHT);
+  
+}
+
+.hero > h1 {
+  padding: .1em .25em;
+  margin-bottom: 0;
+  border-radius: .25em;
+  background-color: var(--LIGHT-BLUE);
+}
+
+.hero > h2 {
+  padding: .1em .25em;
+  margin-top: .5em;
+  border-radius: .25em;
+  max-width: 400px;
+  background-color: var(--DARK-BLUE);
+}
+
+.activities {
+  background-color: var(--LIGHT);
+  padding: 2.5em ;
+}
+
+.activities > .items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  padding-top: 2.5em;
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+.activity {
+  /* border: solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  width: 250px;
+  height: fit-content;
+  cursor: normal;
+}
+
+.img-box {
+  position: relative;
+  align-self: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  box-shadow: 0px 2px 10px rgb(0, 0, 0, .3);
+  overflow: hidden;
+  transition: transform .3s ease-in-out, box-shadow .3s;
+}
+
+.img-box > img {
+  position: absolute;
+}
+
+.activity:hover .img-box {
+  transform: scale(1.5);
+  box-shadow: 10px 10px 30px rgb(0, 0, 0 , .3);
+}
+
+.activity-img-one {
+  width: 200%;
+  right: -35px;
+}
+
+.activity-img-two {
+  right: -50%;
+  width: 280px;
+}
+
+.activity-img-three {
+  width: 220px;
+  left: 0;
+}
+
+.activity-title {
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  background-color: var(--LIGHT);
+}
+
+p {
+  font-weight: lighter;
+}
+
+.guide {
+  margin: 4em auto;
+  padding: 1em;
+
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  max-width: 430px;
+
+  border-bottom: 5px solid var(--DARK-BLUE);
+  border-radius: 1em;
+  background-color: var(--AQUA);
+
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, .3);
+}
+
+.guide:hover {
+  box-shadow: 2px 2px 10px rgb(0,0,0, .3);
+}
+
+.guide > img {
+  width: 180px;
+  border-radius: 1em;
+}
+
+.guide h3, h4 {
+  padding: .5em;
+}
